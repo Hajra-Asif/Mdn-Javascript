@@ -31,8 +31,6 @@ header{
     flex-grow: 1;
     justify-content: flex-start;
     padding-left: 70px;
-    text-transform: uppercase;
-    color: rgb(4, 4, 136);
 }
 
 .logo img {
@@ -59,10 +57,12 @@ nav a:hover {
 }
 
 .tools {
+    width: 40px;
+    height: 20px;
     position: relative;
 }
 
-.new {
+/* .new {
     width: 35px;
     height: 15px;
     border-radius: 10px;
@@ -75,7 +75,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .buttons {
     width: 20%;
@@ -131,7 +131,7 @@ nav a:hover {
 .content {
     max-width: 100vw;
     min-height: 100vh;
-    padding-top: 70px;
+    /* padding-top: 70px; */
     display: flex;
 }
 
@@ -139,9 +139,9 @@ nav a:hover {
     height: 100vh;
     width: 20%;
     box-sizing: border-box;
+    padding-top: 55px;
     padding-left: 50px;
     overflow-y: auto;
-    padding-top: 5px;
     color: #b3b3b3;
 
 .filter{
@@ -196,7 +196,7 @@ nav a:hover {
 }
 
 .select .dropDown {
-    width: 250px;
+    width: 90%;
     background-color: transparent;
     font-size: 15px;
     border: none;
@@ -228,7 +228,7 @@ nav a:hover {
     height: 100vh;
     overflow: auto;
     padding-left: 70px;
-    padding-top: 70px;
+    padding-top: 20px;
     min-height:100vh ;
 }
 
@@ -290,3 +290,133 @@ li {
 .sidebar2 li a:hover {
     color: #0072ef;
 }
+@media only screen and (max-width:1560px) {
+header{
+    min-width:100px ;
+}
+nav{
+    flex-grow: 2;
+gap: 2em;
+}
+.buttons{
+    flex-grow: 2;
+    gap: 1;
+    width: 20%;
+}
+.select .dropDown{
+    margin: 21px 0;
+   }
+   .content{
+    padding-top: 0;
+}
+.description{
+    padding-top: 28px;
+}
+}
+@media only screen and (max-width:1150px){
+    nav{
+        flex-grow: 1;
+        gap: 1em ;
+    }
+    .logo{
+        width: 8%;
+        height: 50px;
+        flex-grow: .5;
+        padding-left: 40px;
+    }
+    .logo img {
+        width: 120px;
+        height: 50px;
+    }
+    .sidebar2{
+        display: none;
+    }
+    .sidebar{
+         width: 30%;
+    }
+    .content{
+        padding-top: 0;
+    }
+   
+   
+    .detail{
+        width: 80%;
+    }
+    }
+
+    @media only screen and (max-width:1000px){
+        nav{
+            display: none;
+        }
+        .buttons{
+            flex-grow: .8;
+        }
+        header{
+            justify-content: space-between;
+        }
+        .signup {
+            width: 120px;
+            height: 30px;
+            font-size: 12px;
+        }
+        .search {
+            width: 120px;
+            height: 35px;
+            padding: 10px;
+        
+        }
+        .sidebar{
+            width: 25%;
+        }
+        .select .dropDown{
+            width: 90%;
+        }
+        .search input{
+            width: 86px;
+        }
+    }
+
+    @media only screen and (max-width:970px){
+        .sidebar{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:650px){
+        .search{
+            display: none;
+        }
+        .search input{
+            width: 80px;
+        }
+    
+        .description{
+            padding-left: 35px;
+            padding-top: 0;
+        }
+
+    }
+    @media only screen and (max-width:570px){
+        .login, .signup{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:440px){
+      
+        .content{
+            padding-top: 0;
+            max-width: 100%;
+        }
+       
+        .detail{
+            width: 80%;
+        }
+        .deatil h4{
+            font-size: 35px;
+        }
+    }
+   
+    @media only screen and (max-width:260px){
+        .detail h4{
+            font-size: 35px;
+        }
+    }
