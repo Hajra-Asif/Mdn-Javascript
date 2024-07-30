@@ -290,14 +290,3 @@ li {
 .sidebar2 li a:hover {
     color: #0072ef;
 }
-@media only screen and (max-width: 1450px;){
-
-    header,
-    nav {
-  
-    }
-  
-    .logo {
-      text-align: left;
-    }
-}  
